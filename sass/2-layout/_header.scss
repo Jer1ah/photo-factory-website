@@ -2,12 +2,10 @@
     background-image: url('http://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/12/2017/03/Port_2_Background.jpg');
     background-position: center;
     background-size: cover;
-    width: 97vw;
     height: 95vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 96vw;
+    margin: 1rem auto 0;
+    position: relative;
 
     &__heading {
         position: absolute;

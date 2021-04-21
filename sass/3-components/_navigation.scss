@@ -6,8 +6,8 @@
         @include displayFlex(row, flex-start, flex-start);
         list-style-type: none;
         position: absolute;
-        left: 2rem;
-        top: 3.75rem;
+        left: 2.5rem;
+        top: 4.20rem;
 
         &Item {
             margin-right: .75rem;
@@ -16,6 +16,12 @@
                 color: white;
                 opacity: .75;
                 font-size: 1.15rem;
+                transition: all .35s;
+
+                &:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -23,7 +29,7 @@
     &__logo {
         position: absolute;
         left: 50%;
-        top: 1.5rem;
+        top: 2rem;
         transform: translateX(-50%);
     }
 }

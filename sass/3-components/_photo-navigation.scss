@@ -1,0 +1,45 @@
+.photo-navigation__list {
+    @include displayFlex(row, center, center);
+    position: absolute;
+    top: 37.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style-type: none;
+
+    &Item {
+        border: white solid .05rem;
+        opacity: .85;
+        padding: .5rem 1rem;
+        border-radius: 2rem;
+        margin: 0 .5rem;
+        transition: all .35s;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: .9rem;
+            font-weight: 300;
+        }
+
+        &:hover {
+            background: $main-blue;
+            border: $main-blue solid .05rem;
+            cursor: pointer;
+
+            a {
+                opacity: 1;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.activeLink {
+    background: $main-blue;
+    border: $main-blue solid .05rem;
+
+    a {
+        opacity: 1;
+        font-weight: 500;
+    }
+}

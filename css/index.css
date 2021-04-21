@@ -11,18 +11,17 @@ html {
 body {
   font-size: 62.5%;
   font-family: sans-serif;
+  padding: 0.05rem;
 }
 
 .header {
   background-image: url("http://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/12/2017/03/Port_2_Background.jpg");
   background-position: center;
   background-size: cover;
-  width: 97vw;
   height: 95vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 96vw;
+  margin: 1rem auto 0;
+  position: relative;
 }
 .header__heading {
   position: absolute;
@@ -52,6 +51,15 @@ body {
   font-weight: 300;
 }
 
+.gallery {
+  margin: -2rem auto 0;
+  width: 85%;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
@@ -66,8 +74,8 @@ body {
   align-items: flex-start;
   list-style-type: none;
   position: absolute;
-  left: 2rem;
-  top: 3.75rem;
+  left: 2.5rem;
+  top: 4.2rem;
 }
 .navigation__social-listItem {
   margin-right: 0.75rem;
@@ -76,12 +84,100 @@ body {
   color: white;
   opacity: 0.75;
   font-size: 1.15rem;
+  transition: all 0.35s;
+}
+.navigation__social-listItem i:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 .navigation__logo {
   position: absolute;
   left: 50%;
-  top: 1.5rem;
+  top: 2rem;
   transform: translateX(-50%);
+}
+
+.photo-navigation__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 37.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style-type: none;
+}
+.photo-navigation__listItem {
+  border: white solid 0.05rem;
+  opacity: 0.85;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin: 0 0.5rem;
+  transition: all 0.35s;
+}
+.photo-navigation__listItem a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.photo-navigation__listItem:hover {
+  background: #47c9e5;
+  border: #47c9e5 solid 0.05rem;
+  cursor: pointer;
+}
+.photo-navigation__listItem:hover a {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.activeLink {
+  background: #47c9e5;
+  border: #47c9e5 solid 0.05rem;
+}
+.activeLink a {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.gallery__list {
+  column-count: 3;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto 5rem;
+}
+.gallery__listItem {
+  margin: 0 0.5rem 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+.gallery__listItem img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.gallery__listItem .overlay {
+  background: linear-gradient(rgba(71, 201, 229, 0.75), rgba(71, 201, 229, 0.75));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.gallery__listItem .overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.gallery__listItem .overlay:hover img {
+  transform: scale(1.1);
+}
+.gallery__listItem:hover img {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=index.css.map */
