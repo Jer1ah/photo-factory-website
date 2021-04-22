@@ -1,14 +1,17 @@
 .gallery__list {
-    column-count: 3;
     width: 100%;
     list-style-type: none;
     padding: 0;
     margin: 0 auto 5rem;
+    @include displayFlex(row, flex-start, flex-start);
+    flex-wrap: wrap;
 
     &Item {
         margin: 0 .5rem 1.25rem;
         position: relative;
         overflow: hidden;
+        transition: all .5s;
+        width: 30%;
 
         img {
             width: 100%;
