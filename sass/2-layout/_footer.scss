@@ -1,0 +1,36 @@
+.footer {
+    background-color: $main-gray;
+    width: 96vw;
+    margin: 1rem auto 1.5rem;
+    padding: 5rem 3.5rem;
+    @include displayFlex(row, space-between, center);
+
+    &__heading {
+        height: 100%;
+        @include displayFlex(row, center, center);
+
+        h2 {
+            font-size: 2.25rem;
+            font-weight: 300;
+            color: #505050;
+            line-height: 2.5rem;
+            letter-spacing: .1rem;
+        }
+
+        h2 span {
+            display: block;
+            font-weight: 700;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        @include displayFlex(row, flex-end, center);
+    }
+
+    &__listItem {
+        @include displayFlex(row, center, center);
+        margin-left: 3rem;
+    }
+}
