@@ -33,3 +33,10 @@
         transform: translateX(-50%);
     }
 }
+
+// media queries
+@media(max-width: 725px) {
+    .navigation__social-list {
+        display: none;
+    }
+}

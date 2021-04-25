@@ -14,6 +14,8 @@
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
+        width: 40rem;
+        max-width: 85%;
 
         h1 {
             font-size: 3.3rem;
@@ -36,6 +38,15 @@
             opacity: .35rem;
             line-height: 1.75rem;
             font-weight: 300;
+        }
+    }
+}
+
+// media queries
+@media(max-width: 725px) {
+    .header__heading {
+        h1 {
+            font-size: 2.5rem;
         }
     }
 }

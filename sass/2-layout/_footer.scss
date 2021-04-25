@@ -1,6 +1,7 @@
 .footer {
     background-color: $main-gray;
     width: 96vw;
+    max-width: 95%;
     margin: 1rem auto 1.5rem;
     padding: 5rem 3.5rem;
     @include displayFlex(row, space-between, center);
@@ -27,10 +28,42 @@
         list-style-type: none;
         padding: 0;
         @include displayFlex(row, flex-end, center);
+        width: 50rem;
+        max-width: 75%;
     }
 
     &__listItem {
         @include displayFlex(row, center, center);
         margin-left: 3rem;
+        width: 19%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// media queries
+@media(max-width: 1025px) {
+    .footer {
+        justify-content: center;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+
+        &__heading {
+            display: none;
+        }
+
+        &__list {
+            width: 100%;
+            max-width: 100%;
+            justify-content: space-between;
+            margin: 0;
+
+            &Item {
+                width: 5rem;
+                margin: 0;
+            }
+        }
     }
 }
