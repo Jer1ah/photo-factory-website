@@ -13,7 +13,7 @@
         transition: all .5s;
         width: 31.5%;
         max-height: 20rem;
-        margin: 0 .5rem 1rem;
+        margin: 0 .8% 1rem;
 
         img {
             position: relative;
@@ -49,6 +49,25 @@
             img {
                 transform: scale(1.1);
             }
+        }
+    }
+}
+
+// media queries 
+@media(max-width: 875px) {
+    .gallery__list {
+        &Item {
+            width: 48%;
+        }
+    }
+}
+
+@media(max-width: 625px) {
+    .gallery__list {
+        justify-content: center;
+        &Item {
+            width: 27.5rem;
+            max-width: 100%;
         }
     }
 }

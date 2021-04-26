@@ -46,3 +46,16 @@
         font-weight: 500;
     }
 }
+
+// media queries
+@media(max-width: 835px) {
+    .photo-navigation__list {
+        top: 35rem;
+    }
+}
+
+@media(max-width: 450px) {
+    .photo-navigation__list {
+        top: 33rem;
+    }
+}

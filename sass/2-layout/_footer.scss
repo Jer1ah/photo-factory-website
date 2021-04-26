@@ -67,3 +67,26 @@
         }
     }
 }
+
+// media queries
+@media(max-width: 700px) {
+    .footer {
+        &__list {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &Item {
+                width: 40%;
+                margin-bottom: 2.5rem;
+
+                img {
+                    width: 50%;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
